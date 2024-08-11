@@ -8,7 +8,7 @@ function App() {
     },
     {
       date: new Date(2021, 11, 25),
-      description: "MacBook",
+      description: "MacBook Pro",
       amount: 1254.72,
     },
     {
