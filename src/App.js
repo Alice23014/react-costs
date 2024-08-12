@@ -1,5 +1,5 @@
-import Costs from "./components/Costs";
-function App() {
+import Costs from "./components/costs/Costs";
+const App = () => {
   const costs = [
     {
       date: new Date(2021, 2, 12),
@@ -15,11 +15,9 @@ function App() {
       date: new Date(2021, 3, 1),
       description: "Телевизор",
       amount: 499.99,
-    }
-  ];  
-  return (
-    <Costs costs = {costs}/>
-  );
-}
+    },
+  ];
+  return <Costs costs={costs} />;
+};
 
 export default App;
