@@ -1,4 +1,5 @@
 import Costs from "./components/costs/Costs";
+import NewCost from "./components/NewCost/NewCost";
 const App = () => {
   const costs = [
     {
@@ -17,7 +18,12 @@ const App = () => {
       amount: 499.99,
     },
   ];
-  return <Costs costs={costs} />;
+  return (
+    <div>
+      <NewCost />
+      <Costs costs={costs} />;
+    </div>
+  );
 };
 
 export default App;
