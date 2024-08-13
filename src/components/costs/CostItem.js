@@ -1,10 +1,13 @@
 import "./CostItem.css";
 import CostDate from "./CostDate";
 import Card from "../UI/Card";
+import React, { useState } from "react";
+
 const CostItem = (props) => {
-  let description = props.description;
+  const [description, setDescription] = useState(props.description);
+
   const ChangeDescriptionHandler = () => {
-    description = "New Text";
+    setDescription("New Cost");
   };
   return (
     <Card className="cost-item">
