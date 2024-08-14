@@ -7,8 +7,9 @@ const NewCost = (props) => {
       ...inputCostData,
       id: Math.random().toString(),
     };
-    props.onSaveCostData(costData);
+    props.onAddCost(costData);
   };
+
   return (
     <div className="new-cost">
       <CostForm onSaveCostData={saveCostDataHandler} />
