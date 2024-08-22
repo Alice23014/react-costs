@@ -6,40 +6,16 @@ const CostForm = (props) => {
   const [inputAmount, setInputAmount] = useState("");
   const [inputDate, setInputDate] = useState("");
 
-  //   const [userInput, setUserInput] = useState({
-  //     name: "",
-  //     amount: "",
-  //     date: "",
-  //   });
-
   const nameChangeHandler = (event) => {
     setInputName(event.target.value);
-    // setUserInput({
-    //   ...userInput,
-    //   name: event.target.value,
-    // });
-    // setUserInput((previousState) => {
-    //     return {
-    //         ...previousState,
-    //         name: event.target.value
-    //     }
-    // })
   };
 
   const amountChangeHandler = (event) => {
     setInputAmount(event.target.value);
-    // setUserInput({
-    //   ...userInput,
-    //   amount: event.target.value,
-    // });
   };
 
   const dateChangeHandler = (event) => {
     setInputDate(event.target.value);
-    // setUserInput({
-    //   ...userInput,
-    //   date: event.target.value,
-    // });
   };
 
   const submitHandler = (event) => {
@@ -80,8 +56,8 @@ const CostForm = (props) => {
             value={inputDate}
             onChange={dateChangeHandler}
             type="date"
-            min="2019-01-01"
-            step="2022-12-31"
+            min="2021-01-01"
+            step="2025-12-31"
           />
         </div>
         <div className="new-cost__actions">

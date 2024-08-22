@@ -3,9 +3,10 @@ import CostItem from "./CostItem";
 import Card from "../UI/Card";
 import CostsFilter from "./CostsFilter";
 import React, { useState } from "react";
+import CostsDiagram from "./CostsDiagram";
 
 const Costs = (props) => {
-  const [year, setYear] = useState("2021");
+  const [year, setYear] = useState("2024");
   const yearChange = (year) => {
     setYear(year);
   };
@@ -16,6 +17,7 @@ const Costs = (props) => {
     <div>
       <Card className="costs">
         <CostsFilter year={year} onChangeYear={yearChange}></CostsFilter>
+        <CostsDiagram costs={filteredCosts}></CostsDiagram>
         {filteredCosts.map((cost) => (
           <CostItem
             key={cost.id}
